@@ -72,6 +72,16 @@ VaR estimates may vary everytime when code is run due to use of numpy.random
 The large difference in 1-month VaR between models is primarily driven by the differnece in sigma estimates (0.65% vs 4.73%) arising from different estimation methods. This highlights that **model choice and estimation method jointly determine perceived risk**.
 
 
+# Requirements
+numpy, pandas, matplotlib, statsmodel
+
+# Usage
+Download "TB3MS.csv" 
+
+Place in the same directory as the notebok
+
+Run "Interest_Rate_Risk_Management.ipynb" end to end.
+
 
 
 
