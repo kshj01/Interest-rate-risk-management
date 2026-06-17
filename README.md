@@ -52,5 +52,30 @@ Limitation : This is a parametric simulation VaR, not historical VaR - results a
 
 
 ## Results
-Parameters - Vasicek (OLS) : Kappa (mean reversion) = 0.1023, mu (long run mean) = 1.27%, sigma (volatility) = 0.65%
-             CIR (MoM) : Kappa (mean reversion) = 0.0577, mu (long run mean) = 1.92%, sigma(volatility) = 4.90%
+Parameters -
+
+Vasicek (OLS) : Kappa (mean reversion) = 0.1023, mu (long run mean) = 1.27%, sigma (volatility) = 0.65%
+
+
+CIR (MoM) : Kappa (mean reversion) = 0.0577, mu (long run mean) = 1.92%, sigma(volatility) = 4.90%
+
+
+Risk Metric - 
+
+Vasicek : Duration (years) = 0.9506, Convexity  = 0.9036, VaR 95% (1-month) = -0.024267, VaR 99% (1-month) = +0.071920
+
+CIR : Duration (years) = 0.9713, Convexity = 0.9435, VaR 95% (1-month) = +0.076355, VaR 99% (1-month) = +0.234643
+
+VaR estimates may vary everytime when code is run due to use of numpy.random
+
+## Key Findings 
+The large difference in 1-month VaR between models is primarily driven by the differnece in sigma estimates (0.65% vs 4.73%) arising from different estimation methods. This highlights that **model choice and estimation method jointly determine perceived risk**.
+
+
+
+
+
+
+
+
+
